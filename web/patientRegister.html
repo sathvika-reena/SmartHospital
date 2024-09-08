@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+    </head>
+    <body style="background-image: url('registerback.jpeg');background-repeat:no;background-size:cover;margin-top:70px;">
+        <form method="post"  style="position:absolute;left:520px;" action = "display.jsp">
+            
+	<h1 style="text-align: center;color:white">Patient Registration</h1>
+	<fieldset style="width:400px">
+            <label for="name" style="color:white">Name: <input type="text" id="name" name="name" required></label><br><br>
+           <label style="color:white">Gender: </label>
+	    <select id="gender" name="gender" required>
+		        <option>Male</option>
+	                <option>Female</option>
+	                <option>Other</option>
+	     </select><br><br>
+        <label style="color:white">Age: <input type="text" id= "age" name = "age"></label><br><br>
+        <label style="color:white">Blood Group: </label>
+	            <select id="grp" name="grp">
+		        <option>A+</option>
+	                <option>A-</option>
+	                <option>B+</option>
+                        <option>B-</option>
+	                <option>O+</option>
+	                <option>O-</option>
+                        <option>AB+</option>
+	                <option>AB-</option>
+	            </select><br><br>
+                    <label for="wt" style="color:white">Weight in kg:<input type="text" id="wt" name="wt"></label><br><br>
+	<label for="pwd" style="color:white">Password: <input type="password" id="pwd" name="pwd" required></label><br><br>
+	<label for="confirmpwd" style="color:white">Confirm Password: <input type="password" id="confirmpwd" name="confirmpwd" required></label><br><br>
+	 <label for="email" style="color:white">Email: <input type="email" name="email" id="email" required></label><br><br>
+	  <label style="color:white">Address: <textarea name="address" rows="3" cols="30" style="border-radius:10px;" required></textarea></label><br><br>
+	   <label for="phno" style="color:white">Phone Number: <input type="text" name="phno" id="phno" required></label><br><br>
+           <label for="patient_id" style="color:white">Patient Id: <input type="text" name ="patient_id" id="patient_id" required></label><br><br>
+	   <input type="submit" value="Register" style="position:relative;left:150px;">
+         </fieldset>
+        </form>
+<!--	<script>
+		function validateForm(){
+			const usernameInput = document.getElementById('name');
+			const emailInput = document.getElementById('email');
+			const mobileInput = document.getElementById('phno');
+			const passwordInput = document.getElementById('pwd');
+			const confirmPasswordInput = document.getElementById('confirmpwd');
+  			const username = usernameInput.value;
+  			const email = emailInput.value;
+  			const mobile = mobileInput.value;
+			const password = passwordInput.value;
+  			const confirmPassword = confirmPasswordInput.value;
+			const usernameRegex=/^[a-z A-Z][a-z A-Z \d]{5,}$/;
+  			if (!usernameRegex.test(username)) {
+    			alert("Username must be at least 6 characters long.");
+    			return false;
+  			}
+  			const emailRegex = /^[a-z A-Z][a-z A-Z \d]+@[a-z A-Z]+[\.](com|ac.in|co.in)$/;
+  			if (!emailRegex.test(email)) {
+    			alert("Please enter a valid email address.");
+    			return false;
+  			}
+  			const mobileRegex = /^[1-9][\d]{9}$/;
+  			if (!mobileRegex.test(mobile)) {
+    			alert("Mobile number must be 10 digits and start with 6-9.");
+    			return false;
+  			}
+			const passwordRegex=/^[A-Z a-z \d][A-Z a-z \d @ $ ! % * ? &]{5,}$/;
+			if(!passwordRegex.test(password)){
+				alert("Password start with letters and atleast length 5");
+				return false;
+			}
+  			if (password !== confirmPassword) {
+    			alert("Password and confirm password fields must match.");
+    			return false;
+  			}
+			alert("Registered successfully!!!");
+			return true;
+		}
+	</script>-->
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Staff Registration</title>
+</head>
+<body style="background-image: url('registerback.jpeg');background-repeat:no;background-size:cover;margin-top:70px;">
+    <h1 style="text-align: center;color:white">Hospital Staff Registration</h1>
+    
+    <form method = "post" style="position:absolute;left:520px;" action = "HospitalStaffRegister.jsp">
+        <fieldset style="width:400px">
+        <label for="name" style="color:white">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email" style="color:white">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phno" style="color:white">Phone:</label>
+        <input type="tel" id="phno" name="phno" required><br><br>
+        
+        <label for="department" style="color:white">Department:</label>
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="nursing">Nursing</option>
+            <option value="lab">Lab Technician</option>
+        </select><br><br>
+        
+        <label for="experience" style="color:white">Experience(No. of Years):</label>
+        <input type="text" id="experience" name="experience" required><br><br>
+        <label for="passwd" style="color:white">Password: <input type="password" id="passwd" name="passwd" required></label><br><br>
+	<label for="confirmpasswd" style="color:white">Confirm Password: <input type="password" id="confirmpasswd" name="confirmpasswd" required></label><br><br>
+	  	     
+        <input type="submit" value="Register" style="position:relative;left:150px;">
+    </fieldset>
+    </form>
+</body>
+</html>

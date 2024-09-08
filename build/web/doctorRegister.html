@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Doctor Registration</title><
+</head>
+<body style="background-image: url('registerback.jpeg');background-repeat:no;background-size:cover;margin-top:70px;">
+    <h1 style="text-align: center;color:white">Doctor Registration</h1>
+    <form method = "post" style="position:absolute;left:520px;" action = "DoctorRegister.jsp">
+        <fieldset style="width:400px">
+        <label for="name" style="color:white">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="specialization" style="color:white">Specialization:</label>
+        <input type="text" id="specialization" name="specialization" required><br><br>
+        
+        <label for="brief_profile" style="color:white">Brief Profile:</label>
+        <textarea id="brief_profile" name="brief_profile" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="availability" style="color:white">Availability:</label>
+        <select id="availability" name="availability" required>
+            <option>Yes</option>
+                <option>No</option>
+        </select><br><br>
+        <label for="passwd" style="color:white">Password: <input type="password" id="passwd" name="passwd" required></label><br><br>
+	<label for="confirmpasswd" style="color:white">Confirm Password: <input type="password" id="confirmpasswd" name="confirmpasswd" required></label><br><br>
+        <label for="email" style="color:white">Email: <input type="email" name="email" id="email" required></label><br><br>
+
+        <label for="phno" style="color:white">Phone Number: <input type="tel" name="phno" id="phno" required></label><br><br>
+        <input type="submit" value="Register" style="position:relative;left:150px;">
+    </fieldset>
+    </form>
+</body>
+</html>
